@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    border: 2 px dotted orange;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shape {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.shape:first-of-type {
+    background-color: cyan;
+}
+
+.shape:nth-last-of-type(2) {
+    background-color: orange;
+}
+
+.shape:last-of-type {
+    background-color: purple;
+}
+
+
+
+/* breakpoint >= 768px */
+/* Si el view es >= 768px aplica estos estilos */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        flex-direction: row;
+        width: 500px;
+        height: 500px;
+        margin: 20px auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .shape {
+        border-radius: unset;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1200px;
+        height: 400px;
+        margin: 100px auto;
+        justify-content: space-around;
+    }
+
+    .shape {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .shape--square {
+        border-radius: unset;
+    }
+}
+
+
+

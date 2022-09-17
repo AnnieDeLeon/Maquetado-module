@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.article {
+    border: 1px solid #ccc;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+p.paragraph {
+    columns: red;
+}
+
+/*Descendiente*/
+
+.article.article p.paragraph {
+    background-color: red;
+    color: cyan;
+}
+
+article-article a {
+    background-color: red;
+    color: white;
+}
+
+article.article .article_body p {
+    color: gray;
+}
+
+/*header.header {}
+selecciona todos los elementos del elemento header 
+con la clase header
+
+nav.links > section.introduction {}
+selecciona el elemento section con clase instroduccion 
+que son hijos directos del elemento nav con clase link
+
+header.header .introduction p {}
+todos los p dentro de la clase introduccion
+
+
+.introduction > p {}
+Todos los parrafos que son hijos directos de una 
+clase introduccion
+
+nav.links ~ section {}
+Selecciona a todos los seccion 
+
+nav.link + section.introduction {}*/

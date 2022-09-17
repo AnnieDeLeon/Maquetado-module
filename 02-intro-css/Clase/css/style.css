@@ -1,0 +1,27 @@
+/*Selector universal*/
+*{
+    color:red;
+}
+
+/*Selector por tagname*/
+h2 {
+    color:green;
+}
+
+/*Selector por clase*/
+.my-color{
+    color:purple;
+}
+
+/* por ID */
+#title-main {
+    color:black;
+    background-color: yellow;
+}
+
+body{
+    font-size: 30px;
+    font-family: Arial;
+    border: 1px solid black;
+    color:gray;
+}

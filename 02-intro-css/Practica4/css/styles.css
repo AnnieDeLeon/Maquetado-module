@@ -1,0 +1,22 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: green;
+}
+
+aside {
+    background-color: orange;
+}
+
+main {
+    background-color: red;
+}
+
+footer {
+    background-color: purple;
+}
+
+
+
